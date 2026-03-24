@@ -12,6 +12,15 @@ const works = [
     publication: "Flash Fiction Magazine",
     link: "https://flashfictionmagazine.com/blog/2026/01/18/obituaries/",
     description: "When obituaries begin writing themselves, a town discovers that some truths cannot be erased—only accepted."
+  },
+  {
+    title: "Drug Binge",
+    year: "2025",
+    type: "Screenplay",
+    status: "Unpublished",
+    category: "screenplay",
+    link: "/pdfs/drug-binge.pdf",
+    description: "A darkly comedic tale of a party gone horribly wrong at a seedy motor lodge."
   }
 ];
 
