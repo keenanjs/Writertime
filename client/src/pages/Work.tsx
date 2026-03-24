@@ -46,12 +46,10 @@ export default function Work() {
               </button>
               <div className="absolute left-1/2 -translate-x-1/2 mt-0 w-40 bg-background border border-border/50 rounded-sm shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 {categories.map((cat) => (
-                 
-                        key={cat.value}
-                    href={cat.value === 'screenplay' ? '/pdfs/drug-binge.pdf' : `#${cat.value}`}
-target={cat.value === 'screenplay' ? '_blank' : undefined}
-    rel={cat.value === 'screenplay' ? 'noopener noreferrer' : undefined}
-    className="block px-4 py-2 text-sm font-mono uppercase tracking-wider text-foreground hover:bg-primary/10 hover:text-primary transition-colors first:rounded-t-sm last:rounded-b-sm"
+                  <a
+                    key={cat.value}
+                    href={`#${cat.value}`}
+                    className="block px-4 py-2 text-sm font-mono uppercase tracking-wider text-foreground hover:bg-primary/10 hover:text-primary transition-colors first:rounded-t-sm last:rounded-b-sm"
                   >
                     {cat.label}
                   </a>
