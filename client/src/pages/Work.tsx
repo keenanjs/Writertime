@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useState } from "react";
 
 const works = [
   {
@@ -34,6 +35,8 @@ const categories = [
 ];
 
 export default function Work() {
+  const [selectedCategory, setSelectedCategory] = useState("screenplay");
+
   return (
     <Layout>
       <div className="space-y-8">
@@ -49,15 +52,12 @@ export default function Work() {
             >
               Published
             </TabsTrigger>
-            {categories.map((cat) => (
-              <TabsTrigger
-                key={cat.value}
-                value={cat.value}
-                className="data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none px-0 py-2 font-mono uppercase text-xs tracking-wider flex-1 text-center"
-              >
-                {cat.label}
-              </TabsTrigger>
-            ))}
+            <TabsTrigger 
+              value="unpublished" 
+              className="data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none px-0 py-2 font-mono uppercase text-xs tracking-wider flex-1 text-center"
+            >
+              Unpublished
+            </TabsTrigger>
           </TabsList>
           
           <TabsContent value="published" className="mt-0">
@@ -68,22 +68,38 @@ export default function Work() {
             </div>
           </TabsContent>
 
-          {categories.map((cat) => (
-            <TabsContent key={cat.value} value={cat.value} className="mt-0">
-              <div className="grid md:grid-cols-2 gap-6">
-                {works
-                  .filter(w => w.status === "Unpublished" && w.category === cat.value)
-                  .map((work, index) => (
-                    <WorkCard key={index} work={work} />
-                  ))}
-                {works.filter(w => w.status === "Unpublished" && w.category === cat.value).length === 0 && (
-                  <div className="col-span-2 text-center py-12 text-muted-foreground font-mono text-sm">
-                    No {cat.label.toLowerCase()} yet. Check back soon.
-                  </div>
-                )}
+          <TabsContent value="unpublished" className="mt-0">
+            <div className="mb-6">
+              <div className="flex flex-wrap gap-2 justify-center">
+                {categories.map((cat) => (
+                  <button
+                    key={cat.value}
+                    onClick={() => setSelectedCategory(cat.value)}
+                    className={`px-4 py-2 font-mono uppercase text-xs tracking-wider rounded-sm border transition-all ${
+                      selectedCategory === cat.value
+                        ? "bg-primary text-primary-foreground border-primary"
+                        : "bg-background text-foreground border-border/50 hover:border-primary/50"
+                    }`}
+                  >
+                    {cat.label}
+                  </button>
+                ))}
               </div>
-            </TabsContent>
-          ))}
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              {works
+                .filter(w => w.status === "Unpublished" && w.category === selectedCategory)
+                .map((work, index) => (
+                  <WorkCard key={index} work={work} />
+                ))}
+              {works.filter(w => w.status === "Unpublished" && w.category === selectedCategory).length === 0 && (
+                <div className="col-span-2 text-center py-12 text-muted-foreground font-mono text-sm">
+                  No {categories.find(c => c.value === selectedCategory)?.label.toLowerCase()} yet. Check back soon.
+                </div>
+              )}
+            </div>
+          </TabsContent>
         </Tabs>
       </div>
     </Layout>
