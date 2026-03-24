@@ -49,22 +49,15 @@ export default function Work() {
             >
               Published
             </TabsTrigger>
-            <div className="relative group flex-1 text-center">
-              <button className="w-full px-0 py-2 font-mono uppercase text-xs tracking-wider text-foreground hover:text-primary transition-colors">
-                Unpublished
-              </button>
-              <div className="absolute left-1/2 -translate-x-1/2 mt-0 w-40 bg-background border border-border/50 rounded-sm shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                {categories.map((cat) => (
-                  <a
-                    key={cat.value}
-                    href={`#${cat.value}`}
-                    className="block px-4 py-2 text-sm font-mono uppercase tracking-wider text-foreground hover:bg-primary/10 hover:text-primary transition-colors first:rounded-t-sm last:rounded-b-sm"
-                  >
-                    {cat.label}
-                  </a>
-                ))}
-              </div>
-            </div>
+            {categories.map((cat) => (
+              <TabsTrigger
+                key={cat.value}
+                value={cat.value}
+                className="data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none px-0 py-2 font-mono uppercase text-xs tracking-wider flex-1 text-center"
+              >
+                {cat.label}
+              </TabsTrigger>
+            ))}
           </TabsList>
           
           <TabsContent value="published" className="mt-0">
@@ -74,6 +67,23 @@ export default function Work() {
               ))}
             </div>
           </TabsContent>
+
+          {categories.map((cat) => (
+            <TabsContent key={cat.value} value={cat.value} className="mt-0">
+              <div className="grid md:grid-cols-2 gap-6">
+                {works
+                  .filter(w => w.status === "Unpublished" && w.category === cat.value)
+                  .map((work, index) => (
+                    <WorkCard key={index} work={work} />
+                  ))}
+                {works.filter(w => w.status === "Unpublished" && w.category === cat.value).length === 0 && (
+                  <div className="col-span-2 text-center py-12 text-muted-foreground font-mono text-sm">
+                    No {cat.label.toLowerCase()} yet. Check back soon.
+                  </div>
+                )}
+              </div>
+            </TabsContent>
+          ))}
         </Tabs>
       </div>
     </Layout>
@@ -98,7 +108,7 @@ function WorkCard({ work }: { work: any }) {
           <span className="font-mono text-xs text-muted-foreground">{work.year}</span>
         </div>
         <CardTitle className="font-serif text-xl leading-tight group-hover:text-primary transition-colors">
-          <a href={work.link} className="after:absolute after:inset-0">
+          <a href={work.link} target={work.status === "Unpublished" ? "_blank" : undefined} rel={work.status === "Unpublished" ? "noopener noreferrer" : undefined} className="after:absolute after:inset-0">
             {work.title}
           </a>
         </CardTitle>
