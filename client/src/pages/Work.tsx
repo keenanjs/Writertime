@@ -22,6 +22,15 @@ const works = [
     category: "screenplay",
     link: "/pdfs/drug-binge.pdf",
     description: "A darkly comedic tale of a party gone horribly wrong at a seedy motor lodge."
+  },
+  {
+    title: "The Last Goodbye",
+    year: "2025",
+    type: "Screenplay",
+    status: "Unpublished",
+    category: "screenplay",
+    link: "/pdfs/the-last-goodbye.pdf",
+    description: "An elderly widower climbs a windswept cliff to scatter his wife's ashes and say his final goodbye."
   }
 ];
 
