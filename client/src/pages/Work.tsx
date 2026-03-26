@@ -31,7 +31,16 @@ const works = [
     category: "screenplay",
     link: "/pdfs/the-last-goodbye.pdf",
     description: "An elderly widower climbs a windswept cliff to scatter his wife's ashes and say his final goodbye."
-  }
+  },
+  {
+  title: "DWP",
+  year: "2025",
+  type: "Screenplay",
+  status: "Unpublished",
+  category: "screenplay",
+  link: "/pdfs/dwp.pdf",
+  description: "A young woman's honest attempt to navigate the benefits system collides with bureaucratic absurdity at the job centre."
+}
 ];
 
 const categories = [
