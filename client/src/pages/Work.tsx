@@ -40,6 +40,15 @@ const works = [
   category: "screenplay",
   link: "/pdfs/dwp.pdf",
   description: "A young woman's honest attempt to navigate the benefits system collides with bureaucratic absurdity at the job centre."
+},
+  {
+  title: "The Funeral",
+  year: "2025",
+  type: "Screenplay",
+  status: "Unpublished",
+  category: "screenplay",
+  link: "/pdfs/the-funeral.pdf",
+  description: "In the aftermath of tragedy, a father and son confront guilt, grief, and the impossibility of forgiveness."
 }
 ];
 
