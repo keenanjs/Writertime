@@ -136,13 +136,11 @@ export default function Work() {
 function WorkCard({ work }: { work: any }) {
   return (
     <Card className="group hover:shadow-lg transition-all duration-300 border-border/60 bg-card hover:-translate-y-1 overflow-hidden relative">
-      <div className="absolute top-0 right-0 p-4 opacity-50 group-hover:opacity-100 transition-opacity">
-        {work.status === "Published" ? (
-          <img src="/images/stamp-published.png" alt="Published" className="w-16 h-auto rotate-12" />
-        ) : (
-          <img src="/images/stamp-draft.png" alt="Draft" className="w-16 h-auto -rotate-6" />
-        )}
-      </div>
+      {work.status === "Published" && (
+  <div className="absolute top-0 right-0 p-4 opacity-50 group-hover:opacity-100 transition-opacity">
+    <img src="/images/stamp-published.png" alt="Published" className="w-16 h-auto rotate-12" />
+  </div>
+)}
       <CardHeader>
         <div className="flex justify-between items-start mb-2">
           <Badge variant="outline" className="font-mono text-xs uppercase tracking-wider rounded-sm border-primary/30 text-primary">
