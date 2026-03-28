@@ -49,6 +49,15 @@ const works = [
   category: "screenplay",
   link: "/pdfs/the-funeral.pdf",
   description: "In the aftermath of tragedy, a father and son confront guilt, grief, and the impossibility of forgiveness."
+},
+  {
+  title: "The Writer's Mantra",
+  year: "2025",
+  type: "Screenplay",
+  status: "Unpublished",
+  category: "screenplay",
+  link: "/pdfs/the-writers-mantra.pdf",
+  description: "A writer's internal monologue spirals through endless tabs, themes, and deleted drafts in search of the perfect opening."
 }
 ];
 
