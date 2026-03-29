@@ -58,6 +58,15 @@ const works = [
   category: "screenplay",
   link: "/pdfs/the-writers-mantra.pdf",
   description: "A writer's internal monologue spirals through endless tabs, themes, and deleted drafts in search of the perfect opening."
+},
+  {
+  title: "The Lecture",
+  year: "2025",
+  type: "Short Story",
+  status: "Unpublished",
+  category: "short",
+  link: "/pdfs/the-lecture.pdf",
+  description: "A blocked writer sits in the audience, desperately hoping Charlie Kaufman's lecture will finally unlock their creative potential."
 }
 ];
 
