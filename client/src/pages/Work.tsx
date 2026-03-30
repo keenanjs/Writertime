@@ -67,6 +67,15 @@ const works = [
   category: "short",
   link: "/pdfs/the-lecture.pdf",
   description: "A blocked writer sits in the audience, desperately hoping Charlie Kaufman's lecture will finally unlock their creative potential."
+},
+  {
+  title: "What is The Book of Genesis trying to tell us?",
+  year: "2025",
+  type: "Essay",
+  status: "Unpublished",
+  category: "essay",
+  link: "/pdfs/what-is-genesis-trying-to-tell-us.pdf",
+  description: "An exploration of Genesis through the lenses of violence, language, hubris, memory, and the paradoxes of human existence."
 }
 ];
 
