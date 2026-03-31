@@ -76,6 +76,15 @@ const works = [
   category: "essay",
   link: "/pdfs/what-is-genesis-trying-to-tell-us.pdf",
   description: "An exploration of Genesis through the lenses of violence, language, hubris, memory, and the paradoxes of human existence."
+},
+  {
+  title: "Against Immortality: Why Nothing Lasts and Why That's Enough",
+  year: "2025",
+  type: "Essay",
+  status: "Unpublished",
+  category: "essay",
+  link: "/pdfs/against-immortality.pdf",
+  description: "A meditation on mortality, memory, and meaning sparked by fainting on a birthday and the timeless terror of The Epic of Gilgamesh."
 }
 ];
 
