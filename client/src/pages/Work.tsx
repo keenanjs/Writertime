@@ -103,6 +103,15 @@ const works = [
   category: "flash",
   link: "/pdfs/renovations.pdf",
   description: "The apartment has been developing some unusual structural issues. The estate agent calls it character."
+},
+  {
+  title: "Zen and the Art of Appliance Maintenance",
+  year: "2025",
+  type: "Flash Fiction",
+  status: "Published",
+  publication: "London Independent Story Prize Anthology",
+  link: "https://www.londonindependentstoryprize.co.uk/buy-lisp-anthology",
+  description: "A therapist suggests connecting with people. I started with my refrigerator. Things escalated."
 }
 ];
 
