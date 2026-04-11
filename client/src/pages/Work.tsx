@@ -112,6 +112,15 @@ const works = [
   publication: "London Independent Story Prize Anthology",
   link: "https://www.londonindependentstoryprize.co.uk/buy-lisp-anthology",
   description: "A therapist suggests connecting with people. I started with my refrigerator. Things escalated."
+},
+  {
+  title: "Background Noise",
+  year: "2025",
+  type: "Flash Fiction",
+  status: "Unpublished",
+  category: "flash",
+  link: "/pdfs/background-noise.pdf",
+  description: "Something isn't quite right about the sounds coming from the neighbouring apartments."
 }
 ];
 
