@@ -121,6 +121,15 @@ const works = [
   category: "flash",
   link: "/pdfs/background-noise.pdf",
   description: "Something isn't quite right about the sounds coming from the neighbouring apartments."
+},
+  {
+  title: "Intimate Little Nightmares",
+  year: "2025",
+  type: "Flash Fiction",
+  status: "Unpublished",
+  category: "flash",
+  link: "/pdfs/intimate-little-nightmares.pdf",
+  description: "The birds have forgotten how to sing, and nobody seems to notice."
 }
 ];
 
