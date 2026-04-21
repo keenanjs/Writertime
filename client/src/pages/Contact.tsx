@@ -36,7 +36,6 @@ export default function Contact() {
             >
               keenansandswriting@gmail.com
             </a>
-            </p>
           </div>
 
           <div className="bg-white p-8 rounded-sm shadow-sm border border-border/50 hover:border-primary/30 transition-colors text-center group">
