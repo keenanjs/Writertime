@@ -36,8 +36,7 @@ export default function Contact() {
             >
               keenansandswriting@gmail.com
             </a>
-            <p className="text-sm text-muted-foreground mt-4">
-              For general inquiries, press, and everything else.
+            <p className="text-sm text-muted-foreground mt-4"
             </p>
           </div>
 
