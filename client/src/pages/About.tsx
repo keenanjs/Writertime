@@ -21,10 +21,7 @@ export default function About() {
           
           <div className="prose prose-stone prose-lg text-foreground/90 font-serif space-y-4">
             <p>
-              I'm never entirely sure how to talk about myself, nor do I make it easy for myself. To me, it means to compress one's entire existence into a handful of tidy paragraphs: you begin editing your own life, deciding which parts are relevant, which parts are merely decoration, and which parts make you sound like a person worth paying attention to. It's a kind of tug-of-war. Ultimately, I want to be sincere, but at the same time I want to be impressive, or at least persuasive in the sense that I am, in fact, living a life, and that by the end of this I will have proven that I am, by some definition, unique.
-            </p>
-            <p>
-              I think what I struggle with most is the feeling that writing about myself is akin to describing a fictional character loosely based on me, written by someone who isn't convinced I'm all that compelling. Still, I suppose the polite thing is to try.
+              I'm never entirely sure how to talk about myself, nor do I make it easy for myself. Still, I suppose the polite thing is to try.
             </p>
             <p className="font-semibold text-foreground mt-6">
               Some stark and unembellished facts, important or otherwise:
