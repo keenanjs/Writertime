@@ -229,10 +229,6 @@ export default function Home() {
         }}>
           <div className="absolute inset-0 bg-background" style={{opacity: 0.5, minHeight: '100%'}} />
           <div className="relative z-10">
-          <h3 className="text-2xl md:text-3xl font-serif">
-            Enter the archive.
-          </h3>
-
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/work">
               <span className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-mono text-sm uppercase tracking-wider hover:bg-primary/90 transition-all duration-300 cursor-pointer shadow-md hover:shadow-lg hover:-translate-y-0.5">
