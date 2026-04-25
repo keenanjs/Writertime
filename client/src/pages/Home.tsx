@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import { Link } from "wouter";
-import { ArrowRight, BookOpen } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const storyExcerpts = [
