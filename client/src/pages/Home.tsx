@@ -178,10 +178,6 @@ export default function Home() {
           </div>
 
           <div className="relative bg-gradient-to-br from-secondary/50 to-secondary/20 p-8 md:p-12 border border-border/50 rounded-sm min-h-72 flex flex-col justify-between group hover:border-primary/40 transition-all duration-300 shadow-sm hover:shadow-md">
-            <div className="absolute top-4 right-4 opacity-20 group-hover:opacity-40 transition-opacity">
-              <BookOpen className="w-12 h-12 text-primary" />
-            </div>
-            
             <div className="space-y-6">
               <div className="space-y-2">
                 <span className="font-mono text-xs uppercase tracking-widest text-primary font-bold">
