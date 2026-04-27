@@ -135,7 +135,7 @@ export default function Home() {
           <div className="relative z-10 max-w-3xl space-y-6">
 
             <h2 className="text-4xl md:text-5xl font-serif leading-tight text-foreground">
-              Stories that linger in the margins of ordinary life.
+              A brief slip. A long, slow impact.
             </h2>
             
             <p className="text-lg text-foreground/80 font-serif max-w-2xl leading-relaxed">
