@@ -139,7 +139,7 @@ export default function Home() {
             </h2>
             
             <p className="text-lg text-foreground/80 font-serif max-w-2xl leading-relaxed">
-              Explore the archive of Keenan Sands' work—where loss, isolation, and the surreal collide with the everyday, all presented in a style sitting somewhere between a public service announcement and a breakdown scribbled on an air sickness bag.
+              Explore the work of Keenan Sands. Presented in a style sitting somewhere between a public service announcement and a breakdown scribbled on an airsickness bag.
             </p>
             
             <div className="flex flex-wrap gap-4 pt-4">
