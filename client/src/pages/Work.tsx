@@ -12,7 +12,7 @@ const works = [
     status: "Published",
     publication: "Flash Fiction Magazine",
     link: "https://flashfictionmagazine.com/blog/2026/01/18/obituaries/",
-    description: "When obituaries begin writing themselves, a town discovers that some truths cannot be erased—only accepted."
+    description: "When obituaries begin writing themselves, a town discovers that some truths cannot be erased — only accepted."
   },
   {
     title: "Drug Binge",
