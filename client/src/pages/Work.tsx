@@ -111,7 +111,7 @@ const works = [
   status: "Published",
   publication: "London Independent Story Prize Anthology",
   link: "https://www.londonindependentstoryprize.co.uk/buy-lisp-anthology",
-  description: "A therapist suggests connecting with people. I started with my refrigerator. Things escalated."
+  description: "A therapist suggested I try to connect with more people. So, naturally, I started with my sentient refrigerator."
 },
   {
   title: "Background Noise",
