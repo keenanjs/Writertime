@@ -137,7 +137,7 @@ const categories = [
   { label: "Poems", value: "poem" },
   { label: "Flash", value: "flash" },
   { label: "Short", value: "short" },
-  { label: "Novella", value: "novella" },
+  { label: "Novellas", value: "novellas" },
   { label: "Essays", value: "essay" },
   { label: "Screenplays", value: "screenplay" }
 ];
