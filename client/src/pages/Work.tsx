@@ -84,7 +84,7 @@ const works = [
   status: "Unpublished",
   category: "essay",
   link: "/pdfs/against-immortality.pdf",
-  description: "A meditation on mortality, memory, and meaning sparked by fainting on a birthday and the timeless terror of The Epic of Gilgamesh."
+  description: "A meditation on mortality, memory, and meaning sparked by The Epic of Gilgamesh."
 },
   {
   title: "Old familiar sink situations",
