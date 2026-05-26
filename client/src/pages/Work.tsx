@@ -19,8 +19,7 @@ const works = [
   year: "2026",
   type: "Flash Fiction",
   status: "Published",
-  publication: "Free Flash Fiction - Highly Commended - Free Flash Fiction Competition 33",
-  AdditionalPraise: "Longlisted for the Bridport Prize",
+  publication: "Free Flash Fiction Competition Thirty Three: Highly Commended",
   link: "https://freeflashfiction.com/fiction/competition-thirty-three-highly-commended-renovations/",
   description: "The apartment has been developing some unusual structural issues. The estate agent calls it character."
 },
