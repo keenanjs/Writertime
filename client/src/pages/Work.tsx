@@ -15,6 +15,15 @@ const works = [
     description: "When obituaries begin writing themselves, a town discovers that some truths cannot be erased — only accepted."
   },
   {
+    title: "How could you ever think I wanted to hurt you?",
+    year: "2026",
+    type: "Short Fiction",
+    status: "Published",
+    publication: "La Piccioletta Barca",
+    link: "https://www.picciolettabarca.com/posts/how-could-you-ever-think-i-wanted-to-hurt-you",
+    description: "In a Parisian theatre, an ageing actress slips loose from her role and sees it plainly: the man is only tired, the words only words, the art only a gorgeous lie."
+  },
+  {
   title: "Renovations",
   year: "2026",
   type: "Flash Fiction",
